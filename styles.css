@@ -1,22 +1,25 @@
 body {
-    font-family: 'Lobster', cursive; /* Change to a romantic cursive font */
+    font-family: 'Lobster', cursive; /* Keep for stylistic headings */
     background-color: #ffdde1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
     margin: 0;
-    background: url('images/image.jpg') repeat;
+    background: url('images/background.gif') no-repeat center center fixed; /* Updated */
+    background-size: cover;
     font-size: 35px;
-    color: rgb(255, 0, 174);
+    color: #fb6F92;
+    cursor: url('images/heart-cursor.png'), auto; 
+
 }
 .hh{
-    -webkit-text-stroke: 2px #71004f;
+    -webkit-text-stroke: 2px #640046;
     font-weight:900;
 
 }
 .pp{
-    -webkit-text-stroke: 2px #71004f;
+    -webkit-text-stroke: 2px #640046;
 
     font-size: 50px;
     font-style: oblique;
@@ -38,15 +41,14 @@ body
 }
 
 .image{
-    height: 280px;
-    
+    height: 350px;  
 }
 
 .buttons button {
-    background-color: #ff4d79;
+    background-color: #ff8fab;
     color: #fff;
     padding: 10px 30px;
-    border: none;
+    border: 2px solid #640046;
     border-radius: 10px;
     margin: 10px;
     font-size: 26px;

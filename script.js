@@ -8,8 +8,8 @@ function showMessage(response) {
     // Set button position to absolute
     noButton.style.position = "absolute";
 
-    // Change image source to "gun.gif"
-    document.getElementsByClassName("image")[0].src = "images/gun.gif";
+    // Change image source to "sad-sad-cat.gif";
+    document.getElementsByClassName("image")[0].src = "images/sus.gif";
 
     // Generate random coordinates within the visible container
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
@@ -21,10 +21,9 @@ function showMessage(response) {
 
     // Update text content and hide name message
     document.getElementById("question").textContent =
-      "Aha? Masz jeszcze jedną szansę na poprawny wybór...";
+      "Aha? Ten przycisk jest tylko do celów wizualnych...... ";
     document.getElementById("name").style.display = "none";
 
-    // Optional: You can also add a timeout to reset the position after a few seconds
   }
 
   if (response === "Yes") {
@@ -32,14 +31,15 @@ function showMessage(response) {
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
+    // Update text content, show message, and change image source to "kiss.gif"
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "YAAAAAAAAY CANT WAIT FOR WALENTYNKI NA HELU RAZEM!!!";
+    yesMessage.textContent = "YAAAAAAAAY NIE MOGĘ SIĘ DOCZEKAĆ, BĘDZIE SUPERRR!!!";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
-    document.getElementsByClassName("image")[0].src = "images/dance.gif";
+    document.getElementsByClassName("image")[0].src = "images/kiss.gif";
 
     // Remove yes button
     document.getElementById("yesButton").remove();
   }
 }
+
