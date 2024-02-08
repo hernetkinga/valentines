@@ -58,6 +58,11 @@ body
 
 }
 
+.buttons button:active {
+    transform: scale(0.8);
+    transition: transform 0.5s;
+}
+
 .buttons button:hover {
     background-color: #7c1f37;
 
